@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+
+body{
+background:url("https://56.media.tumblr.com/049a01093f5d95dd93a1c7c81664fafb/tumblr_o34zk6ISYb1ufvhwyo1_1280.png")no-repeat;
+background-color:  #004F71;
+background-size: auto;
+font-family: "Roboto",'Open Sans',sans-serif;
+color:white;
+}
+.main{
+text-align:center;
+}
+.header{
+    font-weight:500;
+    color:whitesmoke;   
+    animation-name: rotate;
+    animation-duration: 1s;
+ 
+}
+@keyframes rotate {
+    0% {-webkit-transform: rotateY(50deg); /* Safari */
+    transform: rotateY(50deg);}
+    50%{-webkit-transform: rotateY(150deg); /* Safari */
+    transform: rotateY(150deg);}
+    100% {-webkit-transform: rotateY(0deg); /* Safari */
+    transform: rotateY(0deg);}
+}
+.search{
+width:560px;
+margin:auto;
+position:center;
+
+}
+.input{
+    width:300px;
+    background-color:#c0ddf2;
+    height:40px;
+    border:2px solid white;
+    border-radius:5px;
+    padding-left:15px;
+    font-size:16px;
+    font-weight:300;
+    font-family: "Roboto","Open Sans",sans-serif;
+    transition-duration:1s;
+    z-index:1;
+    position:relative;
+    left:0px;
+}
+
+.link{
+    text-decoration:none;
+    color:#586675;
+    padding:10px 15px 10px 15px;
+
+}
+.highlight{
+    border:2px solid orange;
+    background-color:white;
+    }
+
+.position{
+
+    z-index:3;
+    position:relative;
+    left:-35px;
+    font-size:20px;
+    color:orange;
+
+}
+
+.result{
+padding:50px 100px 0px 100px;
+text-align:left;
+  overflow-y:auto;
+}
+
+.row{
+    border:1px solid white;
+    border-radius:10px;
+    box-shadow:3px 3px 6px white;
+    background-color:#c0ddf2;
+    margin:10px 0px 25px 0px;
+    padding:0px 15px 0px 15px;
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+
+.row:hover{
+     background-color:#ffe9b4;
+     border:1px solid orange;
+     box-shadow:3px 3px 6px orange;
+}
+.row p{
+    font-size:14px;
+}
+.row h3{
+    font-weight:500;
+}
+.searchText{
+    padding-top:15px;
+    font-weight:bold;
+    display:none;
+}
+.searchText span{
+    color:orange;
+}
+
+footer{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    background-color:#4E849C;
+    border-top:1px solid white;
+    text-align:center;
+    padding-top:10px;
+    font-size:14px;
+    color:black;
+    height:30px;
+    width:100%;
+}
